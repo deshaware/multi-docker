@@ -16,8 +16,8 @@ after_success:
   # login docker at travis
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # take those images and push it to dockerhub
-  - docker push dockerswap9/multi-client
   - docker push dockerswap9/multi-nginx
   - docker push dockerswap9/multi-server
   - docker push dockerswap9/multi-worker
+  - docker push dockerswap9/multi-client
 
